@@ -42,7 +42,7 @@ export class UsersService {
   }
 
   remove(firstName: string) {
-    return 0;
+    return this.usersRepository.delete({ firstName: firstName });
   }
 }
 
