@@ -44,6 +44,11 @@ export class UsersService {
   remove(firstName: string) {
     return this.usersRepository.delete({ firstName: firstName });
   }
+
+  deleteOne(user: any): Promise<any> {
+    console.log(user);
+    return this.usersRepository.delete({ firstName: user.username });
+  }
 }
 
 function findAll() {
