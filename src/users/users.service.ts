@@ -50,7 +50,3 @@ export class UsersService {
     return this.usersRepository.delete({ firstName: user.username });
   }
 }
-
-function findAll() {
-  throw new Error('Function not implemented.');
-}
